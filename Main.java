@@ -1,14 +1,28 @@
-public class Main
-{
-    public static void main(String[] args)
-    {
-        int number = 987654, reverse = 0;
-        while(number != 0)
-        {
-            int remainder = number % 10;
-            reverse = reverse * 10 + remainder;
-            number = number/10;
+import java.io.*;
+import java.math.*;
+import java.security.*;
+import java.text.*;
+import java.util.*;
+import java.util.concurrent.*;
+import java.util.regex.*;
+
+public class Solution {
+
+
+
+    private static final Scanner scanner = new Scanner(System.in);
+
+    public static void main(String[] args) {
+        int n = scanner.nextInt();
+        if(n%2==1  && n>=2 && n<=5){
+            System.out.println("Weird");
         }
-        System.out.println("The reverse of the given number is: " + reverse);
+        else if(n%2==0 && n>=20){
+            System.out.println("Not Weird");
+
+        }
+        else{
+            System.out.println("Weird");
+        }
     }
 }
